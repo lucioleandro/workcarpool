@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import br.com.workcarpool.model.Worker;
-import br.com.workcarpool.repository.WokerRepository;
+import br.com.workcarpool.repository.WorkerRepository;
 import br.com.workcarpool.service.GeolocationService;
 
 @Controller
@@ -20,7 +20,7 @@ import br.com.workcarpool.service.GeolocationService;
 public class WorkerController {
 	
 	@Autowired
-	private WokerRepository repository;
+	private WorkerRepository repository;
 	
 	@Autowired
 	private GeolocationService geoService;
